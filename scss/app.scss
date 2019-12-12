@@ -148,6 +148,7 @@ main{
 .blobs{
 	position: relative;
 	height: 420px;
+	margin: 0 auto;
 }
 .blob-section{
 	position: absolute;
@@ -172,7 +173,20 @@ main{
 
 // Media Queries
 @media screen and (max-width: 640px){
-
+	.blobs{
+		width: 60%
+	}
+}
+@media screen and (max-width: 700px){
+	.blobs{
+		height: 300px;
+		width: 70%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.blobs{
+		width: 60%;
+	}	
 }
 @media screen and (max-width: 1640px){
 	header .cta{
