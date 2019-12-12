@@ -14,7 +14,7 @@
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
 
-// Colors
+// Variables
 $darkBlue: #00438D;
 $blue: #1C5E8E;
 $yellow: #d79301;
@@ -28,4 +28,70 @@ body{
 a{
 	display: inline-block;
 	font-weight: 300;
+	text-decoration: none;
+}
+h1{
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 4rem;
+}
+
+// Buttons etc.
+.btn{
+	padding: 15px 35px;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	border-radius: 31px;
+}
+.btn.blue-grad{
+	color: white;
+}
+
+// Colours
+.yellow{
+	color: $yellow;
+}
+.blue{
+	color: $blue;
+}
+.lightBlue{
+	color: $lightBlue;
+}
+.darkBlue{
+	color: $darkBlue;
+}
+.blue-grad{
+	background: linear-gradient(145.45deg, #249DC2 19.39%, #1E6192 84.49%);
+}
+
+// Header
+#bottom-nav{
+	background: $lightBlue;
+	padding: 1.5rem;
+}
+
+// Hero Banner
+.title--sub-text{
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+// Blobs
+.blobs{
+	position: relative;
+}
+.blob-section{
+	position: absolute;
+}
+.blob-section#blob-1{
+	z-index: 4;
+}
+.blob-section#blob-2{
+	z-index: 3;
+}
+.blob-section#blob-3{
+	z-index: 2;
+}
+.blob-section#blob-4{
+	z-index: 1;
 }
